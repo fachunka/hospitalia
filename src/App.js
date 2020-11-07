@@ -5,6 +5,7 @@ import { Navigation, Route, Screen, Link, glide } from "react-tiger-transition";
 import { Container, Row, Col} from "react-bootstrap";
 
 import PersonForm from './components/PersonForm.js'
+import Treatments from './components/Treatments.js'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-tiger-transition/styles/main.min.css";
@@ -13,12 +14,10 @@ import "react-tiger-transition/styles/main.min.css";
 
 
 const App = () => {
-  // Data
-  const [person, setPerson] = useState('')
 
   // Variables
   const [newName, setNewName] = useState('')
-
+  const [person, setPerson] = useState('')
 
 
   // inject glide styles
@@ -128,6 +127,7 @@ const App = () => {
                   <h1>Select {person}'s upcoming treatments</h1>
                 </Row>
                 <Row className="mt-3 mb-3">
+                  <Treatments/>
                 </Row>
                 <Row>
                   <Link to="/" transition='glide-right' className="btn btn-primary mr-auto" type="button">Back</Link>
