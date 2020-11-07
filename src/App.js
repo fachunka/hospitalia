@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navigation, Route, Screen, Link, glide } from "react-tiger-transition";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 
 import PersonForm from './components/PersonForm.js'
 
@@ -53,9 +53,14 @@ const App = () => {
     // Prevents default action (reloading the page on form submission)
     event.preventDefault()
 
-    setPerson(newName)
-    setNewName('')
-    console.log(person);
+    if(newName === ''){
+      alert(`No name added`)
+    }
+    else {
+      setPerson(newName)
+      setNewName('')
+      console.log(person);
+    }
   }
 
   const handleNameChange = (event) => {
@@ -86,12 +91,11 @@ const App = () => {
               style={{
                 backgroundColor: "#ffa000",
                 ...screenStyle
-              }}
-            >
+              }}>
               <Container>
                 <Row>
                   {/* <Col xs={{ span: 9, offset: 1 }}> */}
-                  <h1>Create an adventure for your child.  {person}</h1>
+                  <h1>Create an adventure for your child.</h1>
                   {/* </Col> */}
                 </Row>
                 <Row className="mt-3 mb-3">
@@ -113,28 +117,24 @@ const App = () => {
             </Screen>
           </Route>
 
-          <Route
-            exact
-            path="/a"
-            screen // shorthand to wrap children with screen
-            screenProps={{
-              style: {
+          <Route exact path="/a">
+            <Screen
+              style={{
                 backgroundColor: "#6655bb",
                 ...screenStyle
-              }
-            }}
-          >
+              }}>
             <Container>
-              <Row>
-                <h1>Create an adventure for your child.</h1>
-              </Row>
-              <Row className="mt-3 mb-3">
-              </Row>
-              <Row>
-                <Link to="/" transition='glide-right' className="btn btn-primary mr-auto" type="button">Back</Link>
-                <Link to="/b" transition='glide-left' className="btn btn-primary ml-auto" type="button">Next</Link>
-              </Row>
-            </Container>
+                <Row>
+                  <h1>Select {person}'s upcoming treatments</h1>
+                </Row>
+                <Row className="mt-3 mb-3">
+                </Row>
+                <Row>
+                  <Link to="/" transition='glide-right' className="btn btn-primary mr-auto" type="button">Back</Link>
+                  <Link to="/b" transition='glide-left' className="btn btn-primary ml-auto" type="button">Next</Link>
+                </Row>
+              </Container>
+            </Screen>
           </Route>
 
           <Route exact path="/b">
@@ -144,8 +144,7 @@ const App = () => {
               style={{
                 backgroundColor: "#ffa0bb",
                 ...screenStyle
-              }}
-            >
+              }}>
               {/* Use Link the same way you use
                 react-router Link, but
                 add transition */}
