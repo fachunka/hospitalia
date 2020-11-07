@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hospitalia/static/css/main.da04d144.chunk.css",
-    "main.js": "/hospitalia/static/js/main.33243e7b.chunk.js",
-    "main.js.map": "/hospitalia/static/js/main.33243e7b.chunk.js.map",
+    "main.js": "/hospitalia/static/js/main.0607512f.chunk.js",
+    "main.js.map": "/hospitalia/static/js/main.0607512f.chunk.js.map",
     "runtime-main.js": "/hospitalia/static/js/runtime-main.01567895.js",
     "runtime-main.js.map": "/hospitalia/static/js/runtime-main.01567895.js.map",
     "static/css/2.1a02f21c.chunk.css": "/hospitalia/static/css/2.1a02f21c.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.8b9fecfb.chunk.js",
     "static/css/main.da04d144.chunk.css",
-    "static/js/main.33243e7b.chunk.js"
+    "static/js/main.0607512f.chunk.js"
   ]
 }
