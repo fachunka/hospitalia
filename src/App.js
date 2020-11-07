@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navigation, Route, Screen, Link, glide } from "react-tiger-transition";
-import { Container, Row, Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 import PersonForm from './components/PersonForm.js'
 import Treatments from './components/Treatments.js'
@@ -52,7 +52,7 @@ const App = () => {
     // Prevents default action (reloading the page on form submission)
     event.preventDefault()
 
-    if(newName === ''){
+    if (newName === '') {
       alert(`No name added`)
     }
     else {
@@ -93,12 +93,12 @@ const App = () => {
               }}>
               <Container>
                 <Row>
-                  {/* <Col xs={{ span: 9, offset: 1 }}> */}
-                  <h1>Create an adventure for your child.</h1>
-                  {/* </Col> */}
+                  <Col xs={{ span: 9, offset: 1 }} className="text-center">
+                    <h1>Create an adventure for your child.</h1>
+                  </Col>
                 </Row>
                 <Row className="mt-3 mb-3">
-                  <Col xs={{ span: 9, offset: 1 }}>
+                  <Col xs={{ span: 9, offset: 1 }} className="text-center">
                     <PersonForm
                       addName={addName}
                       newName={newName}
@@ -122,12 +122,16 @@ const App = () => {
                 backgroundColor: "#6655bb",
                 ...screenStyle
               }}>
-            <Container>
+              <Container>
                 <Row>
-                  <h1>Select {person}'s upcoming treatments</h1>
+                  <Col className="text-center">
+                    <h1>Select {person}'s upcoming treatments</h1>
+                  </Col>
                 </Row>
                 <Row className="mt-3 mb-3">
-                  <Treatments/>
+                  <Col xs={{ span: 9, offset: 1 }} className="text-center">
+                    <Treatments />
+                  </Col>
                 </Row>
                 <Row>
                   <Link to="/" transition='glide-right' className="btn btn-primary mr-auto" type="button">Back</Link>

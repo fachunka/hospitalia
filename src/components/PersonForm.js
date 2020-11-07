@@ -9,7 +9,7 @@ const PersonForm = (props) => {
         <Form onSubmit={props.addName}>
             <div>
                 <h5>Add a Name: </h5>
-          <input placeholder="Add a name"
+                <input placeholder="Add a name"
                     value={props.newName}
                     onChange={props.handleNameChange}
                 />
