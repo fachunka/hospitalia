@@ -94,17 +94,17 @@ const App = () => {
               <Container>
                 <Row>
                   {/* <Col xs={{ span: 9, offset: 1 }}> */}
-                    <h1>Create an adventure for your child.</h1>
+                  <h1>Create an adventure for your child.</h1>
                   {/* </Col> */}
                 </Row>
                 <Row className="mt-3 mb-3">
-                  {/* <Col xs={{ span: 9, offset: 1 }}> */}
+                  <Col xs={{ span: 9, offset: 1 }}>
                     <PersonForm
                       addName={addName}
                       newName={newName}
                       handleNameChange={handleNameChange}
                     />
-                  {/* </Col> */}
+                  </Col>
                 </Row>
                 <Row>
                   <Link to="/a" transition='glide-left' className="btn btn-primary ml-auto" type="button">Next</Link>
@@ -159,9 +159,7 @@ const App = () => {
                 <Row className="mt-3 mb-3">
                 </Row>
                 <Row>
-                  {/* <Col xs={{ span: 9, offset: 1 }}> */}
-                    <Link to="/a" transition='glide-right' className="btn btn-primary mr-auto" type="button">Back</Link>
-                  {/* </Col> */}
+                  <Link to="/a" transition='glide-right' className="btn btn-primary mr-auto" type="button">Back</Link>
                 </Row>
               </Container>
             </Screen>

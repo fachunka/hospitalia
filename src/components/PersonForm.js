@@ -6,7 +6,7 @@ const PersonForm = (props) => {
     return (
         <form onSubmit={props.addName}>
             <div>
-                name:
+                <h5>Add a Name: </h5>
           <input
                     value={props.newName}
                     onChange={props.handleNameChange}

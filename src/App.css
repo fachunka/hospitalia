@@ -86,4 +86,16 @@ body,
     color: white;
   }
 
+  .landscape h1 {
+    text-align: center;
+  }
+
+  .landscape h5 {
+    display: inline;
+  }
+
+  .landscape Button {
+    margin: 0px 10px;
+  }
+
 }
