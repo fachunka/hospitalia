@@ -10,6 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-tiger-transition/styles/main.min.css";
 
 
+
+
 const App = () => {
   // Data
   const [person, setPerson] = useState('')
