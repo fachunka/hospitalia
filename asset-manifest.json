@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/hospitalia/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/hospitalia/static/js/main.dcea6d5d.chunk.js",
-    "main.js.map": "/hospitalia/static/js/main.dcea6d5d.chunk.js.map",
-    "runtime-main.js": "/hospitalia/static/js/runtime-main.f06b7948.js",
-    "runtime-main.js.map": "/hospitalia/static/js/runtime-main.f06b7948.js.map",
-    "static/js/2.ff229b56.chunk.js": "/hospitalia/static/js/2.ff229b56.chunk.js",
-    "static/js/2.ff229b56.chunk.js.map": "/hospitalia/static/js/2.ff229b56.chunk.js.map",
-    "static/js/3.7e347b43.chunk.js": "/hospitalia/static/js/3.7e347b43.chunk.js",
-    "static/js/3.7e347b43.chunk.js.map": "/hospitalia/static/js/3.7e347b43.chunk.js.map",
+    "main.css": "/hospitalia/static/css/main.da04d144.chunk.css",
+    "main.js": "/hospitalia/static/js/main.33243e7b.chunk.js",
+    "main.js.map": "/hospitalia/static/js/main.33243e7b.chunk.js.map",
+    "runtime-main.js": "/hospitalia/static/js/runtime-main.01567895.js",
+    "runtime-main.js.map": "/hospitalia/static/js/runtime-main.01567895.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/hospitalia/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.8b9fecfb.chunk.js": "/hospitalia/static/js/2.8b9fecfb.chunk.js",
+    "static/js/2.8b9fecfb.chunk.js.map": "/hospitalia/static/js/2.8b9fecfb.chunk.js.map",
+    "static/js/3.3e4e2eb4.chunk.js": "/hospitalia/static/js/3.3e4e2eb4.chunk.js",
+    "static/js/3.3e4e2eb4.chunk.js.map": "/hospitalia/static/js/3.3e4e2eb4.chunk.js.map",
     "index.html": "/hospitalia/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/hospitalia/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.ff229b56.chunk.js.LICENSE.txt": "/hospitalia/static/js/2.ff229b56.chunk.js.LICENSE.txt",
+    "static/css/2.1a02f21c.chunk.css.map": "/hospitalia/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.da04d144.chunk.css.map": "/hospitalia/static/css/main.da04d144.chunk.css.map",
+    "static/js/2.8b9fecfb.chunk.js.LICENSE.txt": "/hospitalia/static/js/2.8b9fecfb.chunk.js.LICENSE.txt",
     "static/media/logo.103b5fa1.svg": "/hospitalia/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f06b7948.js",
-    "static/js/2.ff229b56.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.dcea6d5d.chunk.js"
+    "static/js/runtime-main.01567895.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.8b9fecfb.chunk.js",
+    "static/css/main.da04d144.chunk.css",
+    "static/js/main.33243e7b.chunk.js"
   ]
 }
