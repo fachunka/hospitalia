@@ -1,10 +1,12 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
+import { Form } from "react-bootstrap";
+
 
 
 const PersonForm = (props) => {
     return (
-        <form onSubmit={props.addName}>
+        <Form onSubmit={props.addName}>
             <div>
                 <h5>Add a Name: </h5>
           <input placeholder="Add a name"
@@ -12,11 +14,10 @@ const PersonForm = (props) => {
                     onChange={props.handleNameChange}
                 />
                 <Button type="submit">add</Button>
-
             </div>
             <div>
             </div>
-        </form>
+        </Form>
     )
 }
 
