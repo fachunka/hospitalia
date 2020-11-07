@@ -32,7 +32,58 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.turn {
+  margin: 20vh;
+}
+
+.turn img {
+  width: 15vw;
+  margin: 20%;
+}
+
+@media screen and (orientation:portrait) {
+
+  .landscape {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .portrait {
+    display: initial;
+  }
+
+  html,
+  body,
+  #root {
+    height: initial;
+  }
+
+}
+
+@media screen and (orientation:landscape) {
+
+  .portrait {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .landscape {
+    display: initial;
+    color: white;
+  }
+
 }
