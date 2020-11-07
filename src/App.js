@@ -12,7 +12,7 @@ import "react-tiger-transition/styles/main.min.css";
 
 const App = () => {
   // Data
-  const [persons, setPersons] = useState([])
+  const [person, setPerson] = useState('')
 
   // Variables
   const [newName, setNewName] = useState('')
@@ -51,14 +51,9 @@ const App = () => {
     // Prevents default action (reloading the page on form submission)
     event.preventDefault()
 
-    const nameObject = {
-      name: newName,
-      id: persons.length + 1,
-    }
-
-    setPersons(persons.concat(nameObject))
+    setPerson(newName)
     setNewName('')
-    console.log(persons);
+    console.log(person);
   }
 
   const handleNameChange = (event) => {
@@ -94,7 +89,7 @@ const App = () => {
               <Container>
                 <Row>
                   {/* <Col xs={{ span: 9, offset: 1 }}> */}
-                  <h1>Create an adventure for your child.</h1>
+                  <h1>Create an adventure for your child.  {person}</h1>
                   {/* </Col> */}
                 </Row>
                 <Row className="mt-3 mb-3">
