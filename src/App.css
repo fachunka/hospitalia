@@ -29,6 +29,9 @@
   height:224px;
 }
 
+
+
+
 .button {
   color: #FFF;
   font-family: 'Chewy', cursive;
@@ -45,6 +48,30 @@
   font-family: 'Chewy', cursive;
   text-decoration: none;
 }
+
+.coins {
+  background-image:  url('../src/img/coins_background.png');
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-left:50px;
+  padding-top:30px;
+  font-family: 'Chewy', cursive;
+  color: #000;
+  font-size: 50pt;
+  width:324px;
+  height:166px;
+}
+
+.tshirt {
+  background-image:  url('../src/img/button_tshirt.png');
+  position: absolute;
+  left:20px;
+  bottom: 0px;
+  width:283px;
+  height:289px;
+}
+
 
 .App-header {
   background-color: #282c34;

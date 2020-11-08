@@ -4,6 +4,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Navigation, Route, Screen, Link, glide } from "react-tiger-transition";
 import { Container, Row, Col } from "react-bootstrap";
 import StartButton from './img/start_button.png'
+import GearButton from './img/gear_button.png'
+import CoinBg from './img/coins_background.png'
+
 
 import PersonForm from './components/PersonForm.js'
 import Treatments from './components/Treatments.js'
@@ -154,12 +157,15 @@ const App = () => {
                     <Link to="/c" transition='glide-left' type="button">  <img src={StartButton} /></Link>
                   </Col>
                 </Row>
-
-
               </Container>
             </Screen>
           </Route>
-          <Route exact path="/c">
+
+
+
+
+
+          <Route exact path="/d">
             {/* Screen is just a div container
               with some basic style */}
             <Screen
@@ -171,12 +177,30 @@ const App = () => {
                 react-router Link, but
                 add transition */}
               <Container>
+                <Row className="fixed-top">
+                  <Col xs={{ span: 2 }} className="text-center">
+                    <Link to="/c" transition='glide-right' type="button">  <img src={GearButton}/></Link>
+                  </Col>
+                  <Col xs={{ span: 8}} className="text-center">
+                  </Col>
+                  <Col xs={{ span: 2 }} className="text-center">
+                <div class="coins">21
+                </div>
+                  </Col>
+                </Row>
                 <Row>
-                  <Col xs={{ span: 10, offset: 1 }} className="text-center">
+                <Col xs={{ span: 10, offset: 1 }} className="text-center">
                     <h1>Hi {person}</h1>
                     <br />
-                    {/* <Link to="/c" transition='glide-right' type="button">  <img src={StartButton}/></Link> */}
                   </Col>
+                </Row>
+                <Row className="fixed-bottom">
+                  <Col xs={{ span: 2 }} className="text-center">
+                    <Link to="/c" transition='glide-right' type="button" class="tshirt">  </Link>
+                  </Col>
+                  <Col xs={{ span: 10}} className="text-center">
+                  </Col>
+              
                 </Row>
 
 
