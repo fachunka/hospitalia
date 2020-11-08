@@ -6,16 +6,14 @@ import { Form } from "react-bootstrap";
 
 const PersonForm = (props) => {
     return (
-        <Form onSubmit={props.addName}>
-            <div>
-                <input placeholder="Add a name"
+        <Form>
+                <Form.Control
+                    size="lg"
+                    placeholder="Add a name"
                     value={props.person}
                     onChange={props.handleNameChange}
                 />
-                {/* <Button type="submit">add</Button> */}
-            </div>
-            <div>
-            </div>
+            {/* <Button type="button" clasName="invisible" >add</Button> */}
         </Form>
     )
 }

@@ -7,6 +7,7 @@ import StartButton from './img/start_button.png'
 
 import PersonForm from './components/PersonForm.js'
 import Treatments from './components/Treatments.js'
+import AnimatedImage from './components/AnimatedImage.js'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-tiger-transition/styles/main.min.css";
@@ -56,7 +57,7 @@ const App = () => {
     <Router>
       <div className="portrait">
         <div className="turn">
-          <img src="hospitalia/img/phone-rotate-landscape.svg" alt="Rotate icon" />
+          <img src="/hospitalia/img/phone-rotate-landscape.svg" alt="Rotate icon" />
           <p>Please rotate your phone</p>
         </div>
       </div>
@@ -77,12 +78,13 @@ const App = () => {
               }}>
               <Container>
                 <Row>
-                  <Col xs={{ span: 9, offset: 1 }} className="text-center">
+                  <Col xs={{ span: 10, offset: 1 }} className="text-center">
                     <h1>Create an adventure for your child.</h1>
+                    <AnimatedImage></AnimatedImage>
                   </Col>
                 </Row>
                 <Row className="mt-3 mb-3">
-                  <Col xs={{ span: 9, offset: 1 }} className="text-center">
+                  <Col xs={{ span: 10, offset: 1 }} className="text-center">
                     <PersonForm
                       handleNameChange={handleNameChange}
                     />
@@ -110,7 +112,7 @@ const App = () => {
                   </Col>
                 </Row>
                 <Row className="mt-3 mb-3">
-                  <Col xs={{ span: 9, offset: 1 }} className="text-center">
+                  <Col xs={{ span: 10, offset: 1 }} className="text-center">
                     <Treatments />
                   </Col>
                 </Row>
@@ -135,7 +137,7 @@ const App = () => {
                 add transition */}
               <Container>
                 <Row>
-                <Col xs={{ span: 9, offset: 1 }} className="text-center">
+                <Col xs={{ span: 10, offset: 1 }} className="text-center">
                   <h1>Ready to start the journey with {person}?</h1>
                   <br />
                   <Link to="/c" transition='glide-right' type="button">  <img src={StartButton}/></Link>

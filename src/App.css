@@ -30,7 +30,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes wobble {
   from {
     transform: rotate(0deg);
   }
@@ -38,6 +38,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+}
+.image[wobble='1'] {
+  animation: wobble 1s 1;
 }
 
 html,
