@@ -16,7 +16,7 @@ import "react-tiger-transition/styles/main.min.css";
 const App = () => {
 
   // Variables
-  const [newName, setNewName] = useState('')
+  // const [newName, setNewName] = useState('')
   const [person, setPerson] = useState('')
 
 
@@ -46,25 +46,9 @@ const App = () => {
   // better to do this on your stylesheet
   document.getElementById("root").style.height = "100vh";
 
-
-  const addName = (event) => {
-
-    // Prevents default action (reloading the page on form submission)
-    event.preventDefault()
-
-    if (newName === '') {
-      alert(`No name added`)
-    }
-    else {
-      setPerson(newName)
-      setNewName('')
-      console.log(person);
-    }
-  }
-
   const handleNameChange = (event) => {
     console.log(event.target.value)
-    setNewName(event.target.value)
+    setPerson(event.target.value)
   }
 
 
@@ -88,7 +72,7 @@ const App = () => {
               with some basic style */}
             <Screen
               style={{
-                backgroundColor: "#ffa000",
+                backgroundColor: "#ccc",
                 ...screenStyle
               }}>
               <Container>
@@ -100,8 +84,6 @@ const App = () => {
                 <Row className="mt-3 mb-3">
                   <Col xs={{ span: 9, offset: 1 }} className="text-center">
                     <PersonForm
-                      addName={addName}
-                      newName={newName}
                       handleNameChange={handleNameChange}
                     />
                   </Col>
@@ -119,7 +101,7 @@ const App = () => {
           <Route exact path="/a">
             <Screen
               style={{
-                backgroundColor: "#6655bb",
+                backgroundColor: "#ccc",
                 ...screenStyle
               }}>
               <Container>
@@ -146,7 +128,7 @@ const App = () => {
               with some basic style */}
             <Screen
               style={{
-                backgroundColor: "#ffa0bb",
+                backgroundColor: "#ccc",
                 ...screenStyle
               }}>
               {/* Use Link the same way you use

@@ -9,10 +9,10 @@ const PersonForm = (props) => {
         <Form onSubmit={props.addName}>
             <div>
                 <input placeholder="Add a name"
-                    value={props.newName}
+                    value={props.person}
                     onChange={props.handleNameChange}
                 />
-                <Button type="submit">add</Button>
+                {/* <Button type="submit">add</Button> */}
             </div>
             <div>
             </div>
