@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/hospitalia/static/css/main.efc0b9fe.chunk.css",
-    "main.js": "/hospitalia/static/js/main.447696ce.chunk.js",
-    "main.js.map": "/hospitalia/static/js/main.447696ce.chunk.js.map",
+    "main.css": "/hospitalia/static/css/main.667d9f0a.chunk.css",
+    "main.js": "/hospitalia/static/js/main.26af5198.chunk.js",
+    "main.js.map": "/hospitalia/static/js/main.26af5198.chunk.js.map",
     "runtime-main.js": "/hospitalia/static/js/runtime-main.90c874b4.js",
     "runtime-main.js.map": "/hospitalia/static/js/runtime-main.90c874b4.js.map",
     "static/css/2.ee7c52e4.chunk.css": "/hospitalia/static/css/2.ee7c52e4.chunk.css",
-    "static/js/2.4fac6e63.chunk.js": "/hospitalia/static/js/2.4fac6e63.chunk.js",
-    "static/js/2.4fac6e63.chunk.js.map": "/hospitalia/static/js/2.4fac6e63.chunk.js.map",
+    "static/js/2.c3f428c1.chunk.js": "/hospitalia/static/js/2.c3f428c1.chunk.js",
+    "static/js/2.c3f428c1.chunk.js.map": "/hospitalia/static/js/2.c3f428c1.chunk.js.map",
     "static/js/3.de270edd.chunk.js": "/hospitalia/static/js/3.de270edd.chunk.js",
     "static/js/3.de270edd.chunk.js.map": "/hospitalia/static/js/3.de270edd.chunk.js.map",
     "index.html": "/hospitalia/index.html",
     "static/css/2.ee7c52e4.chunk.css.map": "/hospitalia/static/css/2.ee7c52e4.chunk.css.map",
-    "static/css/main.efc0b9fe.chunk.css.map": "/hospitalia/static/css/main.efc0b9fe.chunk.css.map",
-    "static/js/2.4fac6e63.chunk.js.LICENSE.txt": "/hospitalia/static/js/2.4fac6e63.chunk.js.LICENSE.txt"
+    "static/css/main.667d9f0a.chunk.css.map": "/hospitalia/static/css/main.667d9f0a.chunk.css.map",
+    "static/js/2.c3f428c1.chunk.js.LICENSE.txt": "/hospitalia/static/js/2.c3f428c1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/hospitalia/static/media/gear_button.6bb18217.png",
+    "static/media/start_button.6e367f0f.png": "/hospitalia/static/media/start_button.6e367f0f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.90c874b4.js",
     "static/css/2.ee7c52e4.chunk.css",
-    "static/js/2.4fac6e63.chunk.js",
-    "static/css/main.efc0b9fe.chunk.css",
-    "static/js/main.447696ce.chunk.js"
+    "static/js/2.c3f428c1.chunk.js",
+    "static/css/main.667d9f0a.chunk.css",
+    "static/js/main.26af5198.chunk.js"
   ]
 }
