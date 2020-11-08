@@ -7,7 +7,6 @@ import StartButton from './img/start_button.png'
 
 import PersonForm from './components/PersonForm.js'
 import Treatments from './components/Treatments.js'
-import AnimatedImage from './components/AnimatedImage.js'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-tiger-transition/styles/main.min.css";
@@ -19,6 +18,7 @@ const App = () => {
   // Variables
   // const [newName, setNewName] = useState('')
   const [person, setPerson] = useState('')
+  const [isActive, setActive] = useState("false");
 
 
   // inject glide styles
@@ -50,7 +50,12 @@ const App = () => {
   const handleNameChange = (event) => {
     console.log(event.target.value)
     setPerson(event.target.value)
-  }
+  };
+
+  const handleMove = () => {
+    console.log('hi');
+    setActive(!isActive);
+  };
 
 
   return (
@@ -80,7 +85,10 @@ const App = () => {
                 <Row>
                   <Col xs={{ span: 10, offset: 1 }} className="text-center">
                     <h1>Create an adventure for your child.</h1>
-                    <AnimatedImage></AnimatedImage>
+                    <div className={isActive ? "btn" : null}>
+                      <h1>Hello react</h1>
+                    </div>
+                    <button onClick={handleMove}>Toggle class</button>
                   </Col>
                 </Row>
                 <Row className="mt-3 mb-3">
@@ -89,7 +97,7 @@ const App = () => {
                       handleNameChange={handleNameChange}
                     />
                     <br />
-                    <Link to="/a" transition='glide-left' className="button" type="button">Next</Link>
+                    <Link to="/a" transition='glide-left' className="btn btn-primary ml-auto" type="button" onClick={handleMove}>Next</Link>
                   </Col>
                 </Row>
               </Container>
@@ -140,12 +148,38 @@ const App = () => {
                 add transition */}
               <Container>
                 <Row>
-                <Col xs={{ span: 10, offset: 1 }} className="text-center">
-                  <h1>Ready to start the journey with {person}?</h1>
-                  <br />
-                  <Link to="/c" transition='glide-right' type="button">  <img src={StartButton}/></Link>
+                  <Col xs={{ span: 10, offset: 1 }} className="text-center">
+                    <h1>Ready to start the journey with {person}?</h1>
+                    <br />
+                    <Link to="/c" transition='glide-left' type="button">  <img src={StartButton} /></Link>
                   </Col>
                 </Row>
+
+
+              </Container>
+            </Screen>
+          </Route>
+          <Route exact path="/c">
+            {/* Screen is just a div container
+              with some basic style */}
+            <Screen
+              style={{
+                backgroundColor: "#ccc",
+                ...screenStyle
+              }}>
+              {/* Use Link the same way you use
+                react-router Link, but
+                add transition */}
+              <Container>
+                <Row>
+                  <Col xs={{ span: 10, offset: 1 }} className="text-center">
+                    <h1>Hi {person}</h1>
+                    <br />
+                    {/* <Link to="/c" transition='glide-right' type="button">  <img src={StartButton}/></Link> */}
+                  </Col>
+                </Row>
+
+
               </Container>
             </Screen>
           </Route>

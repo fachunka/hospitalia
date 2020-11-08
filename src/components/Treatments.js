@@ -9,19 +9,19 @@ import '../App.css';
 const Treatments = (props) => {
     return (
         <Form.Group>
-            <Form.Control as="select" size="lg">
-            <option value="" disabled selected>Select your option</option>
+            <Form.Control as="select" size="lg" defaultValue="DEFAULT">
+            <option value="DEFAULT" disabled>Select your option</option>
 
-                <option>X-Ray</option>
-                <option>Blood test</option>
-                <option>Physical Examination</option>
+                <option value="1">X-Ray</option>
+                <option value="2">Blood test</option>
+                <option value="3">Physical Examination</option>
             </Form.Control>
             <br />
-            <Form.Control as="select" size="lg">
-            <option value="" disabled selected>Select your option</option>
-                <option>Blood test</option>
-                <option>X-Ray</option>
-                <option>Physical Examination</option>
+            <Form.Control as="select" size="lg" defaultValue="DEFAULT">
+            <option value="DEFAULT" disabled>Select your option</option>
+                <option value="1">Blood test</option>
+                <option value="2">X-Ray</option>
+                <option value="3">Physical Examination</option>
             </Form.Control>
             <br />
             <Button className="button" type="submit">Add another treatment</Button>
