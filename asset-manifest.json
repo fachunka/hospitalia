@@ -1,27 +1,31 @@
 {
   "files": {
-    "main.css": "/hospitalia/static/css/main.667d9f0a.chunk.css",
-    "main.js": "/hospitalia/static/js/main.26af5198.chunk.js",
-    "main.js.map": "/hospitalia/static/js/main.26af5198.chunk.js.map",
-    "runtime-main.js": "/hospitalia/static/js/runtime-main.90c874b4.js",
-    "runtime-main.js.map": "/hospitalia/static/js/runtime-main.90c874b4.js.map",
+    "main.css": "/hospitalia/static/css/main.83b1a309.chunk.css",
+    "main.js": "/hospitalia/static/js/main.6debb0f6.chunk.js",
+    "main.js.map": "/hospitalia/static/js/main.6debb0f6.chunk.js.map",
+    "runtime-main.js": "/hospitalia/static/js/runtime-main.824b2d00.js",
+    "runtime-main.js.map": "/hospitalia/static/js/runtime-main.824b2d00.js.map",
     "static/css/2.ee7c52e4.chunk.css": "/hospitalia/static/css/2.ee7c52e4.chunk.css",
-    "static/js/2.c3f428c1.chunk.js": "/hospitalia/static/js/2.c3f428c1.chunk.js",
-    "static/js/2.c3f428c1.chunk.js.map": "/hospitalia/static/js/2.c3f428c1.chunk.js.map",
-    "static/js/3.de270edd.chunk.js": "/hospitalia/static/js/3.de270edd.chunk.js",
-    "static/js/3.de270edd.chunk.js.map": "/hospitalia/static/js/3.de270edd.chunk.js.map",
+    "static/js/2.0943fb3a.chunk.js": "/hospitalia/static/js/2.0943fb3a.chunk.js",
+    "static/js/2.0943fb3a.chunk.js.map": "/hospitalia/static/js/2.0943fb3a.chunk.js.map",
+    "static/js/3.e6145fed.chunk.js": "/hospitalia/static/js/3.e6145fed.chunk.js",
+    "static/js/3.e6145fed.chunk.js.map": "/hospitalia/static/js/3.e6145fed.chunk.js.map",
+    "static/js/4.303ad3e0.chunk.js": "/hospitalia/static/js/4.303ad3e0.chunk.js",
+    "static/js/4.303ad3e0.chunk.js.map": "/hospitalia/static/js/4.303ad3e0.chunk.js.map",
     "index.html": "/hospitalia/index.html",
     "static/css/2.ee7c52e4.chunk.css.map": "/hospitalia/static/css/2.ee7c52e4.chunk.css.map",
-    "static/css/main.667d9f0a.chunk.css.map": "/hospitalia/static/css/main.667d9f0a.chunk.css.map",
-    "static/js/2.c3f428c1.chunk.js.LICENSE.txt": "/hospitalia/static/js/2.c3f428c1.chunk.js.LICENSE.txt",
+    "static/css/main.83b1a309.chunk.css.map": "/hospitalia/static/css/main.83b1a309.chunk.css.map",
+    "static/js/2.0943fb3a.chunk.js.LICENSE.txt": "/hospitalia/static/js/2.0943fb3a.chunk.js.LICENSE.txt",
+    "static/js/3.e6145fed.chunk.js.LICENSE.txt": "/hospitalia/static/js/3.e6145fed.chunk.js.LICENSE.txt",
     "static/media/App.css": "/hospitalia/static/media/gear_button.6bb18217.png",
+    "static/media/spaceship.cd85b240.png": "/hospitalia/static/media/spaceship.cd85b240.png",
     "static/media/start_button.6e367f0f.png": "/hospitalia/static/media/start_button.6e367f0f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.90c874b4.js",
+    "static/js/runtime-main.824b2d00.js",
     "static/css/2.ee7c52e4.chunk.css",
-    "static/js/2.c3f428c1.chunk.js",
-    "static/css/main.667d9f0a.chunk.css",
-    "static/js/main.26af5198.chunk.js"
+    "static/js/2.0943fb3a.chunk.js",
+    "static/css/main.83b1a309.chunk.css",
+    "static/js/main.6debb0f6.chunk.js"
   ]
 }
