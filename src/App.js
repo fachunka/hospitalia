@@ -70,6 +70,8 @@ const App = () => {
         </div>
       </div>
       <div className="landscape">
+        <div className={isActive ? "imageActive" : "image"} >
+        </div>
         {/* BrowserRouter from react-router-dom */}
 
         {/* Context provider for transitions */}
@@ -88,10 +90,6 @@ const App = () => {
                 <Row>
                   <Col xs={{ span: 10, offset: 1 }} className="text-center">
                     <h1>Create an adventure for your child.</h1>
-                    <div className={isActive ? "btn" : null}>
-                      <h1>Hello react</h1>
-                    </div>
-                    <button onClick={handleMove}>Toggle class</button>
                   </Col>
                 </Row>
                 <Row className="mt-3 mb-3">
@@ -100,7 +98,7 @@ const App = () => {
                       handleNameChange={handleNameChange}
                     />
                     <br />
-                    <Link to="/a" transition='glide-left' className="button" type="button" onClick={handleMove}>Next</Link>
+                    <Link to="/a" transition='glide-left' className="button" type="button">Next</Link>
                   </Col>
                 </Row>
               </Container>
@@ -122,16 +120,16 @@ const App = () => {
                     <h1>Select {person}'s upcoming treatments</h1>
                   </Col>
                 </Row>
-              
+
                 <Row className="mt-3 mb-3">
-                <Col xs={{ span: 3 }} className="text-center">
-                <Link to="/" transition='glide-right' className="leftarrow" type="button"></Link>
+                  <Col xs={{ span: 3 }} className="text-center">
+                    <Link to="/" transition='glide-right' className="leftarrow" type="button"></Link>
                   </Col>
-                  <Col xs={{ span: 6}} className="text-center">
+                  <Col xs={{ span: 6 }} className="text-center">
                     <Treatments />
                   </Col>
-                  <Col xs={{ span: 3}} className="text-center">
-                  <Link to="/b" transition='glide-left' className="rightarrow" type="button"></Link>
+                  <Col xs={{ span: 3 }} className="text-center">
+                    <Link to="/b" transition='glide-left' className="rightarrow" type="button"></Link>
                   </Col>
                 </Row>
               </Container>
@@ -154,7 +152,7 @@ const App = () => {
                   <Col xs={{ span: 10, offset: 1 }} className="text-center">
                     <h1>Ready to start the journey with {person}?</h1>
                     <br />
-                    <Link to="/c" transition='glide-left' type="button">  <img src={StartButton} /></Link>
+                    <Link to="/c" transition='glide-left' type="button" className="button" onClick={handleMove}>  Start </Link>
                   </Col>
                 </Row>
               </Container>

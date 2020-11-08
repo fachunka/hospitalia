@@ -24,7 +24,7 @@ const Treatments = (props) => {
                 <option value="3">Physical Examination</option>
             </Form.Control>
             <br />
-            <Button className="button" type="submit">Add another treatment</Button>
+            <button className="button" type="submit">Add another treatment</button>
         </Form.Group>
     )
 }

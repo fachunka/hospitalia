@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
-    
+
 .App {
   text-align: center;
 }
@@ -17,16 +17,18 @@
 
 .leftarrow {
   background-image: url('../src/img/button_left.png');
-  background-repeat: no-repeat;  
-  width:220px;
-  height:224px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 224px;
+  background-size: contain;
 }
 
 .rightarrow {
   background-image: url('../src/img/button_right.png');
-  background-repeat: no-repeat;  
-  width:220px;
-  height:224px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 224px;
+  background-size: contain;
 }
 
 
@@ -35,15 +37,17 @@
 .button {
   color: #FFF;
   font-family: 'Chewy', cursive;
-  background-image:  url('../src/img/button_background.png');
-  font-size: 30pt;  
+  background-image: url('../src/img/button_background.png');
+  font-size: 30pt;
   border-radius: 25px;
   padding: 10px 30px 10px;
-  height:75px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);  
+  line-height: 80px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-size: contain;
+  width: 100%;
 }
 
-.button:hover{
+.button:hover {
   color: #FFF;
   font-family: 'Chewy', cursive;
   text-decoration: none;
@@ -101,17 +105,38 @@
 .image {
   display: block;
   margin: 0 auto;
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+  position: fixed;
+  z-index: 100;
+  width: 110%;
+  height: 110%;
+  bottom: -25%;
+  right: -33%;
+  visibility: visible;
+  background-image: url('../src/img/assets/GH_astronaut_v01.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.image[wobble='1'] {
-  animation: wobble 1s 1;
+
+.imageActive {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translate(0, +100vh);
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+  z-index: 100;
+  visibility: hidden;
 }
+
 
 html,
 body,
 #root {
-    height: 100%;
-    font-family: 'Chewy', cursive;
-    font-weight: 400; 
+  height: 100%;
+  font-family: 'Chewy', cursive;
+  font-weight: 400;
 }
 
 .turn {
@@ -154,6 +179,8 @@ body,
   .landscape {
     display: initial;
     color: white;
+    overflow: hidden;
+    position: relative;
   }
 
   .landscape h1 {
@@ -164,8 +191,8 @@ body,
     display: inline;
   }
 
-  .landscape Button {
+  /* .landscape Button {
     margin: 0px 10px;
-  }
+  } */
 
 }
