@@ -3,13 +3,13 @@ import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navigation, Route, Screen, Link, glide } from "react-tiger-transition";
 import { Container, Row, Col } from "react-bootstrap";
+import StartButton from './img/start_button.png'
 
 import PersonForm from './components/PersonForm.js'
 import Treatments from './components/Treatments.js'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-tiger-transition/styles/main.min.css";
-
 
 
 
@@ -86,10 +86,9 @@ const App = () => {
                     <PersonForm
                       handleNameChange={handleNameChange}
                     />
+                    <br />
+                    <Link to="/a" transition='glide-left' className="btn btn-primary ml-auto" type="button">Next</Link>
                   </Col>
-                </Row>
-                <Row>
-                  <Link to="/a" transition='glide-left' className="btn btn-primary ml-auto" type="button">Next</Link>
                 </Row>
               </Container>
               {/* Use Link the same way you use
@@ -138,13 +137,12 @@ const App = () => {
                 <Row>
                 <Col xs={{ span: 9, offset: 1 }} className="text-center">
                   <h1>Ready to start the journey with {person}?</h1>
+                  <br />
+                  <Link to="/c" transition='glide-right' type="button">  <img src={StartButton}/></Link>
                   </Col>
                 </Row>
-                <Row className="mt-3 mb-3">
-                </Row>
-                <Row>
-                  <Link to="/a" transition='glide-right' className="btn btn-primary mr-auto" type="button">Back</Link>
-                </Row>
+              
+          
               </Container>
             </Screen>
           </Route>
