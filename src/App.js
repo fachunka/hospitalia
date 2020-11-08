@@ -6,6 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import StartButton from './img/start_button.png'
 import GearButton from './img/gear_button.png'
 import CoinBg from './img/coins_background.png'
+import SpaceShip from './img/spaceship.png'
 
 
 import PersonForm from './components/PersonForm.js'
@@ -176,19 +177,59 @@ const App = () => {
                 add transition */}
               <Container>
                 <Row className="fixed-top">
-                  <Link to="/c" transition='glide-right' type="button" class="gear"> </Link>
-                  <div class="coins">
-                    <div class="coincount">21</div>
+                  <Link to="/c" transition='glide-right' type="button" className="gear"> </Link>
+                  <div className="coins">
+                    <div className="coincount">21</div>
                   </div>
                 </Row>
                 <Row>
                   <Col xs={{ span: 10, offset: 1 }} className="text-center">
-                    <h1>Hi {person}</h1>
+                    <div className="speech-bubble ">We need your help {person}! Our ship is broken and we need you to find the missing</div>
                     <br />
+                    </Col>
+
+                </Row>
+                <Row>
+                <Col xs={{ span: 2, offset: 5 }} className="text-center">
+                    <Link to="/e" transition='glide-left' className="rightarrow" type="button" ></Link>
                   </Col>
                 </Row>
                 <Row className="fixed-bottom">
-                  <Link to="/c" transition='glide-right' type="button" class="tshirt"> </Link>
+                  <Link to="" transition='glide-right' type="button" className="tshirt"> </Link>
+                </Row>
+
+
+              </Container>
+            </Screen>
+          </Route>
+
+          <Route exact path="/e">
+            {/* Screen is just a div container
+              with some basic style */}
+            <Screen
+              style={{
+                backgroundColor: "#ccc",
+                ...screenStyle
+              }}>
+              {/* Use Link the same way you use
+                react-router Link, but
+                add transition */}
+              <Container>
+                <Row className="fixed-top">
+                  <Link to="/c" transition='glide-right' type="button" className="gear"> </Link>
+                  <div className="coins">
+                    <div className="coincount">21</div>
+                  </div>
+                </Row>
+                <Row>
+                  <Col xs={{ span: 10, offset: 1 }} className="text-center">
+                  <img src={SpaceShip}  />
+                    </Col>
+
+                </Row>
+             
+                <Row className="fixed-bottom">
+                  <Link to="" transition='glide-right' type="button" className="tshirt"> </Link>
                 </Row>
 
 
