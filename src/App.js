@@ -97,7 +97,7 @@ const App = () => {
                       handleNameChange={handleNameChange}
                     />
                     <br />
-                    <Link to="/a" transition='glide-left' className="btn btn-primary ml-auto" type="button" onClick={handleMove}>Next</Link>
+                    <Link to="/a" transition='glide-left' className="button" type="button" onClick={handleMove}>Next</Link>
                   </Col>
                 </Row>
               </Container>
