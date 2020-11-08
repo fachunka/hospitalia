@@ -154,7 +154,9 @@ const App = () => {
                 add transition */}
               <Container>
                 <Row>
-                  <h1>Create an adventure for your child.</h1>
+                <Col xs={{ span: 9, offset: 1 }} className="text-center">
+                  <h1>Ready to start the journey with {person}?</h1>
+                  </Col>
                 </Row>
                 <Row className="mt-3 mb-3">
                 </Row>

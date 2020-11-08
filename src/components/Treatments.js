@@ -8,12 +8,15 @@ const Treatments = (props) => {
     return (
         <Form.Group>
             <Form.Control as="select" size="lg">
+            <option value="" disabled selected>Select your option</option>
+
                 <option>X-Ray</option>
                 <option>Blood test</option>
                 <option>Physical Examination</option>
             </Form.Control>
             <br />
             <Form.Control as="select" size="lg">
+            <option value="" disabled selected>Select your option</option>
                 <option>Blood test</option>
                 <option>X-Ray</option>
                 <option>Physical Examination</option>
