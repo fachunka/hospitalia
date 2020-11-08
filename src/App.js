@@ -3,11 +3,12 @@ import React, { useState, useEffect } from 'react'
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navigation, Route, Screen, Link, glide } from "react-tiger-transition";
 import { Container, Row, Col } from "react-bootstrap";
+import useSound from 'use-sound';
+
 import StartButton from './img/start_button.png'
 import GearButton from './img/gear_button.png'
 import CoinBg from './img/coins_background.png'
 import SpaceShip from './img/spaceship.png'
-
 
 import PersonForm from './components/PersonForm.js'
 import Treatments from './components/Treatments.js'
@@ -18,6 +19,9 @@ import "react-tiger-transition/styles/main.min.css";
 
 
 const App = () => {
+
+
+
 
   // Variables
   // const [newName, setNewName] = useState('')
@@ -66,7 +70,7 @@ const App = () => {
     <Router>
       <div className="portrait">
         <div className="turn">
-          <img src="/hospitalia/img/phone-rotate-landscape.svg" alt="Rotate icon" />
+          <img src="/hospitalia/img/phone-rotate-landscape.svg" alt="Rotate icon" height="100" width="100" />
           <p>Please rotate your phone</p>
         </div>
       </div>

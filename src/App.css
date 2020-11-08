@@ -109,6 +109,7 @@
   height: 179px;
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-appearance: none;
 }
 
 .tshirt {
@@ -120,7 +121,6 @@
   height: 136px;
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
 
