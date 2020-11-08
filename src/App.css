@@ -15,6 +15,37 @@
   }
 }
 
+.leftarrow {
+  background-image: url('../src/img/button_left.png');
+  background-repeat: no-repeat;  
+  width:220px;
+  height:224px;
+}
+
+.rightarrow {
+  background-image: url('../src/img/button_right.png');
+  background-repeat: no-repeat;  
+  width:220px;
+  height:224px;
+}
+
+.button {
+  color: #FFF;
+  font-family: 'Chewy', cursive;
+  background-image:  url('../src/img/button_background.png');
+  font-size: 30pt;  
+  border-radius: 25px;
+  padding: 10px 30px 10px;
+  height:75px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);  
+}
+
+.button:hover{
+  color: #FFF;
+  font-family: 'Chewy', cursive;
+  text-decoration: none;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

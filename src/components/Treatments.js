@@ -1,6 +1,8 @@
 import React from 'react'
 import { Form } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
+import '../App.css';
+
 
 
 
@@ -22,7 +24,7 @@ const Treatments = (props) => {
                 <option>Physical Examination</option>
             </Form.Control>
             <br />
-            <Button type="submit">Add another treatment</Button>
+            <Button className="button" type="submit">Add another treatment</Button>
         </Form.Group>
     )
 }

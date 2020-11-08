@@ -89,7 +89,7 @@ const App = () => {
                       handleNameChange={handleNameChange}
                     />
                     <br />
-                    <Link to="/a" transition='glide-left' className="btn btn-primary ml-auto" type="button">Next</Link>
+                    <Link to="/a" transition='glide-left' className="button" type="button">Next</Link>
                   </Col>
                 </Row>
               </Container>
@@ -111,14 +111,17 @@ const App = () => {
                     <h1>Select {person}'s upcoming treatments</h1>
                   </Col>
                 </Row>
+              
                 <Row className="mt-3 mb-3">
-                  <Col xs={{ span: 10, offset: 1 }} className="text-center">
+                <Col xs={{ span: 3 }} className="text-center">
+                <Link to="/" transition='glide-right' className="leftarrow" type="button"></Link>
+                  </Col>
+                  <Col xs={{ span: 6}} className="text-center">
                     <Treatments />
                   </Col>
-                </Row>
-                <Row>
-                  <Link to="/" transition='glide-right' className="btn btn-primary mr-auto" type="button">Back</Link>
-                  <Link to="/b" transition='glide-left' className="btn btn-primary ml-auto" type="button">Next</Link>
+                  <Col xs={{ span: 3}} className="text-center">
+                  <Link to="/b" transition='glide-left' className="rightarrow" type="button"></Link>
+                  </Col>
                 </Row>
               </Container>
             </Screen>
@@ -143,8 +146,6 @@ const App = () => {
                   <Link to="/c" transition='glide-right' type="button">  <img src={StartButton}/></Link>
                   </Col>
                 </Row>
-              
-          
               </Container>
             </Screen>
           </Route>
