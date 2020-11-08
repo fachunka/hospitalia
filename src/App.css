@@ -38,10 +38,9 @@
   color: #FFF;
   font-family: 'Chewy', cursive;
   background-image: url('../src/img/button_background.png');
-  font-size: 30pt;
+  font-size: 21pt;
   border-radius: 25px;
-  padding: 10px 30px 10px;
-  line-height: 80px;
+  line-height: 40pt;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background-size: contain;
   width: 100%;
@@ -54,26 +53,47 @@
 }
 
 .coins {
-  background-image:  url('../src/img/coins_background.png');
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  padding-left:50px;
-  padding-top:30px;
+  background-image: url('../src/img/coins_background.png');
+  position: fixed;
+  top: 0;
+  right: 0;
   font-family: 'Chewy', cursive;
   color: #000;
-  font-size: 50pt;
-  width:324px;
-  height:166px;
+  font-size: 52px;
+  width: 239px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.coincount {
+  line-height: 28pt;
+  position: relative;
+  right: -154px;
+  top: 38px;
+  z-index: 20000;
+}
+
+.gear {
+  background-image: url('../src/img/gear_button.png');
+  position: fixed;
+  left: 1%;
+  top: 0%;
+  width: 100%;
+  height: 179px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .tshirt {
-  background-image:  url('../src/img/button_tshirt.png');
-  position: absolute;
-  left:20px;
-  bottom: 0px;
-  width:283px;
-  height:289px;
+  background-image: url('../src/img/button_tshirt.png');
+  position: fixed;
+  left: 3%;
+  bottom: 4%;
+  width: 100%;
+  height: 136px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 

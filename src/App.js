@@ -152,7 +152,7 @@ const App = () => {
                   <Col xs={{ span: 10, offset: 1 }} className="text-center">
                     <h1>Ready to start the journey with {person}?</h1>
                     <br />
-                    <Link to="/c" transition='glide-left' type="button" className="button" onClick={handleMove}>  Start </Link>
+                    <Link to="/d" transition='glide-left' type="button" className="button" onClick={handleMove}>  Start </Link>
                   </Col>
                 </Row>
               </Container>
@@ -176,29 +176,19 @@ const App = () => {
                 add transition */}
               <Container>
                 <Row className="fixed-top">
-                  <Col xs={{ span: 2 }} className="text-center">
-                    <Link to="/c" transition='glide-right' type="button">  <img src={GearButton}/></Link>
-                  </Col>
-                  <Col xs={{ span: 8}} className="text-center">
-                  </Col>
-                  <Col xs={{ span: 2 }} className="text-center">
-                <div class="coins">21
-                </div>
-                  </Col>
+                  <Link to="/c" transition='glide-right' type="button" class="gear"> </Link>
+                  <div class="coins">
+                    <div class="coincount">21</div>
+                  </div>
                 </Row>
                 <Row>
-                <Col xs={{ span: 10, offset: 1 }} className="text-center">
+                  <Col xs={{ span: 10, offset: 1 }} className="text-center">
                     <h1>Hi {person}</h1>
                     <br />
                   </Col>
                 </Row>
                 <Row className="fixed-bottom">
-                  <Col xs={{ span: 2 }} className="text-center">
-                    <Link to="/c" transition='glide-right' type="button" class="tshirt">  </Link>
-                  </Col>
-                  <Col xs={{ span: 10}} className="text-center">
-                  </Col>
-              
+                  <Link to="/c" transition='glide-right' type="button" class="tshirt"> </Link>
                 </Row>
 
 
